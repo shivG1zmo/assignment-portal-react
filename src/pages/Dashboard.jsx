@@ -18,11 +18,11 @@ function Dashboard() {
     setProfessor(JSON.parse(stored))
 
     // Fetch assignments and submissions when component loads
-    axios.get('http://localhost:3000/assignments')
+    axios.get('https://assignment-portal-backend-zyn8.onrender.com/assignments')
       .then(res => setAssignments(res.data))
       .catch(err => console.log(err))
 
-    axios.get('http://localhost:3000/submissions')
+    axios.get('https://assignment-portal-backend-zyn8.onrender.com/submissions')
       .then(res => setSubmissions(res.data))
       .catch(err => console.log(err))
   }, [])
@@ -86,7 +86,7 @@ function Dashboard() {
                   Submitted: {new Date(s.submittedAt).toLocaleDateString()}
                 </p>
                 <a
-                  href={'http://localhost:3000/' + s.filePath}
+                  href={'https://assignment-portal-backend-zyn8.onrender.com/' + s.filePath}
                   target="_blank"
                   style={styles.downloadBtn}
                 >

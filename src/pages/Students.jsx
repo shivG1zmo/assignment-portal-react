@@ -15,7 +15,7 @@ function Students() {
     }
     setProfessor(JSON.parse(stored))
 
-    axios.get('http://localhost:3000/users')
+    axios.get('https://assignment-portal-backend-zyn8.onrender.com/users')
       .then(res => {
         // Filter only students from the users list
         const onlyStudents = res.data.filter(u => u.role === 'student')

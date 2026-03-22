@@ -13,7 +13,7 @@ function Login() {
     setLoading(true)
     setError('')
     try {
-      const response = await axios.post('http://localhost:3000/users/login', { email, password })
+      const response = await axios.post('https://assignment-portal-backend-zyn8.onrender.com/users/login', { email, password })
       if (response.data.user.role !== 'professor') {
         setError('This dashboard is for professors only.')
         setLoading(false)
