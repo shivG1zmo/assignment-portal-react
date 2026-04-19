@@ -1,16 +1,83 @@
-# React + Vite
+# Assignment Portal — Professor Dashboard (React)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based dashboard for professors to manage student assignments. Part of the **Student Assignment Portal**, a full-stack web application built with the MERN/MEAN stack.
 
-Currently, two official plugins are available:
+🔗 **Live Demo:** [assignment-portal-react.vercel.app](https://assignment-portal-react.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🗂️ Related Repositories
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+| Part | Repo | Live |
+|------|------|------|
+| Professor Dashboard (React) | [assignment-portal-react](https://github.com/shivG1zmo/assignment-portal-react) | [Live](https://assignment-portal-react.vercel.app/) |
+| Student Portal (Angular) | [assignment-portal-angular](https://github.com/shivG1zmo/assignment-portal-angular) | [Live](https://assignment-portal-angular.vercel.app/login) |
+| Backend (Node.js/Express) | [assignment-portal-backend](https://github.com/shivG1zmo/assignment-portal-backend) | [Live](https://assignment-portal-backend-zyn8.onrender.com) |
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Features
+
+- View all students and their submitted assignments
+- Track submission status across the class
+- Download submitted assignment files
+- Real-time data fetched from REST API backend
+
+---
+
+## 🛠️ Tech Stack
+
+- **React** — UI library
+- **JavaScript (ES6+)** — core logic
+- **Fetch API** — HTTP requests to backend (no axios)
+- **Vercel** — deployment
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js installed
+- Backend server running (see [assignment-portal-backend](https://github.com/shivG1zmo/assignment-portal-backend))
+
+### Installation
+
+```bash
+git clone https://github.com/shivG1zmo/assignment-portal-react.git
+cd assignment-portal-react
+npm install
+npm start
+```
+
+The app runs at `http://localhost:3000` by default.
+
+> **Note:** Make sure the backend is running and the API URL in the code points to your local backend or the deployed Render URL.
+
+---
+
+## 🌐 Deployment
+
+Deployed on **Vercel**. To deploy your own:
+
+```bash
+npm install -g vercel
+vercel
+```
+
+---
+
+## 📁 Project Structure
+
+```
+src/
+├── components/       # Reusable UI components
+├── pages/            # Main page views
+├── App.js            # Root component and routing
+└── index.js          # Entry point
+```
+
+---
+
+## 👤 Author
+
+**Shivram C** — [github.com/shivG1zmo](https://github.com/shivG1zmo)
